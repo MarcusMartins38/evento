@@ -63,16 +63,12 @@ export default async function EventPage({ params }: EventPageProps) {
       <div className="min-h-[75vh] text-center px-5 py-16">
         <Section>
           <SectionHeading>About this event</SectionHeading>
-          <SectionContent className="max-w-4xl mx-auto text-lg leading-8 text-white/75">
-            {event.description}
-          </SectionContent>
+          <SectionContent>{event.description}</SectionContent>
         </Section>
 
         <Section>
           <SectionHeading>Location</SectionHeading>
-          <SectionContent className="max-w-4xl mx-auto text-lg leading-8 text-white/75">
-            {event.location}
-          </SectionContent>
+          <SectionContent>{event.location}</SectionContent>
         </Section>
       </div>
     </main>
